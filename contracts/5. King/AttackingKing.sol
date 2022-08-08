@@ -12,5 +12,8 @@ contract AttackingKing {
 
     function hackContract() external {
         // Code me!
+        // As long as the prize is >= 5eth, then we will 
+        // make the payable function send it to this contractAddress 
+        address(contractAddress).call{value: 5 ether}("");
     }
 }
